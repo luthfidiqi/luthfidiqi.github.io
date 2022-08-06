@@ -52,6 +52,9 @@ body {
   a {
     text-decoration: none;
   }
+  .text-purple {
+    color: $main-purple;
+  }
   .navbar {
     z-index: 1;
     background-color: map-get($dark, "background");
@@ -114,7 +117,7 @@ body {
       justify-content: center;
       font-size: 14px;
       font-weight: 600;
-      padding: 8px px;
+      padding: 8px 18px;
       border-radius: 999px;
       -webkit-border-radius: 999px;
       -moz-border-radius: 999px;
@@ -193,6 +196,30 @@ body {
       display: flex;
       align-items: center;
       justify-content: center;
+    }
+  }
+
+  // Main
+  main {
+    // Skills
+    .skills {
+      margin-top: 100px;
+      h3 {
+        font-size: 40px;
+        text-align: center;
+        font-weight: 700;
+        margin-bottom: 50px;
+      }
+      .logo-skills {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: map-get($dark, "secondary");
+        padding: 50px 0;
+        img {
+          margin: 0 25px;
+        }
+      }
     }
   }
 }

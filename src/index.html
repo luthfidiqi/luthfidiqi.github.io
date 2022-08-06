@@ -28,27 +28,27 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
+                <a class="nav-link" href="#about">About</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#skills">Skills & Tools</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Projects</a>
+                <a class="nav-link" href="#projects">Projects</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
+                <a class="nav-link" href="#contact">Contact</a>
               </li>
             </ul>
             <div class="switch-mode">
-              <div class="btn-mode-dark">
+              <span onclick="setLightMode(false)" class="btn-mode-dark">
                 <img src="./images/icon-dark.svg" alt="" />
-                <span onclick="setLightMode(false)">Dark</span>
-              </div>
-              <div class="btn-mode-light">
+                <p>Dark</p>
+              </span>
+              <span onclick="setLightMode(true)" class="btn-mode-light">
                 <img src="./images/icon-light.svg" alt="" />
-                <span onclick="setLightMode(true)">Light</span>
-              </div>
+                <p>Light</p>
+              </span>
             </div>
           </div>
         </div>
@@ -83,6 +83,45 @@
     </header>
 
     <main>
+      <section class="about container" id="about">
+        <h3>About <span class="text-purple text-center">Me</span></h3>
+        <div class="about-cont row">
+          <div class="col-3 about-card">
+            <img src="./images/communicative.svg" alt="" />
+            <h4>Communicative</h4>
+            <p>
+              I communicate what I struggle to make all clear. I also can
+              communicate my ideas well.
+            </p>
+          </div>
+          <div class="col-3 about-card">
+            <img src="./images/innovative.svg" alt="" />
+            <h4>Innovative</h4>
+            <p>
+              I like to think critically and creative, so I often get fresh and
+              interesting ideas.
+            </p>
+          </div>
+          <div class="col-3 about-card">
+            <img src="./images/collaborative​.svg" alt="" />
+            <h4>Collaborative​</h4>
+            <p>
+              I can work within a team, collaborate well with all role, and I
+              love feedbacks.
+            </p>
+          </div>
+          <div class="col-3 about-card">
+            <img src="./images/passionate.svg" alt="" />
+            <h4>Passionate</h4>
+            <p>
+              I have great spirit and interest in programming and design. Always
+              learning & growth.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills -->
       <section class="skills" id="skills">
         <h3>Skills & <span class="text-purple text-center">Tools</span></h3>
         <div class="logo-skills">
@@ -92,8 +131,11 @@
         </div>
       </section>
     </main>
+
+    <!-- Javascript -->
     <script type="module" src="./js/main.js"></script>
-    <!-- SWITCH LIGHT/DARK MODE JS -->
+
+    <!-- Switch Mode JS -->
     <script>
       if (localStorage.getItem("theme") == "light") setLightkMode(true);
 

@@ -6,49 +6,80 @@
     <title>Luthfiqi - Frontend Web Developer</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg">
-      <div class="container">
-        <a class="navbar-brand" href="#">Luthfiqi</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Skills & Tools</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
-            </li>
-          </ul>
-          <div class="d-flex">
-            <span class="btn-mode" onclick="setLightMode(true)">Light</span>
-            <span class="btn-mode" onclick="setLightMode(false)">Dark</span>
+    <header>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <div class="logo">
+            <img src="./images/logo-luthfiqi.svg" alt="" />
+            <a class="navbar-brand ms-3" href="#">Luthfiqi</a>
+          </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Skills & Tools</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+            <div class="switch-mode">
+              <div class="btn-mode-dark">
+                <img src="./images/icon-dark.svg" alt="" />
+                <span onclick="setLightMode(false)">Dark</span>
+              </div>
+              <div class="btn-mode-light">
+                <img src="./images/icon-light.svg" alt="" />
+                <span onclick="setLightMode(true)">Light</span>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </nav>
-    <div class="container py-4 px-3 mx-auto">
-      <h1>Hello, I'm Luthfi</h1>
-      <button class="btn btn-primary">Primary button</button>
-      <a href="../cv-luthfi.pdf" download class="btn btn-primary">
-        Download CV
-      </a>
-    </div>
+      </nav>
+
+      <section class="hero container">
+        <div class="left">
+          <h2>Hi, i’m Luthfi Thufail Asiddiqi</h2>
+          <h1>Frontend Website Developer</h1>
+          <p>
+            Hi, I'm Luthfi, an Frontend Web Developer, I believe in crafting
+            engaging and intuitive website. I have an interest in programming
+            and design. I mastered using figma and several other design
+            applications, then I learning web development with HTML, CSS,
+            Javascript, and Bootstrap.
+          </p>
+          <div class="hero-cta">
+            <div class="btn-purple me-4">
+              <img src="./images/icon-mail.svg" alt="" class="me-2" />
+              <a href="#"> Email Me </a>
+            </div>
+            <div class="btn-cv">
+              <img src="./images/icon-download.svg" alt="" class="me-2" />
+              <a href="../cv-luthfi.pdf" download> Download CV </a>
+            </div>
+          </div>
+        </div>
+        <div class="right">
+          <img src="./images/hero-img.svg" alt="" />
+        </div>
+      </section>
+    </header>
     <script type="module" src="./js/main.js"></script>
     <!-- SWITCH LIGHT/DARK MODE JS -->
     <script>

@@ -45,6 +45,9 @@ $light: (
 $main-purple: #5468ff;
 
 // Switch dark Mode
+html {
+  scroll-behavior: smooth;
+}
 body {
   background-color: map-get($dark, "background");
   color: white;

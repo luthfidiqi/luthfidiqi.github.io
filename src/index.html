@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Luthfiqi - Frontend Web Developer</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="#">Luthfiqi</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Skills & Tools</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+          <div class="d-flex">
+            <span class="btn-mode" onclick="setLightMode(true)">Light</span>
+            <span class="btn-mode" onclick="setLightMode(false)">Dark</span>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="container py-4 px-3 mx-auto">
+      <h1>Hello, I'm Luthfi</h1>
+      <button class="btn btn-primary">Primary button</button>
+      <a href="../cv-luthfi.pdf" download class="btn btn-primary">
+        Download CV
+      </a>
+    </div>
+    <script type="module" src="./js/main.js"></script>
+    <!-- SWITCH LIGHT/DARK MODE JS -->
+    <script>
+      if (localStorage.getItem("theme") == "light") setLightkMode(true);
+
+      function setLightMode(isLight) {
+        if (isLight) {
+          document.body.setAttribute("id", "lightmode");
+          localStorage.setItem("theme", "light");
+        } else {
+          document.body.setAttribute("id", "");
+          localStorage.removeItem("theme");
+        }
+      }
+    </script>
+  </body>
+</html>

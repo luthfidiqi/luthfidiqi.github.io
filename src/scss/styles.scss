@@ -1,0 +1,76 @@
+// Import Bootstrap
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+
+@import "../node_modules/bootstrap/scss/maps";
+@import "../node_modules/bootstrap/scss/mixins";
+@import "../node_modules/bootstrap/scss/root";
+
+@import "../node_modules/bootstrap/scss/reboot";
+@import "../node_modules/bootstrap/scss/type";
+@import "../node_modules/bootstrap/scss/grid";
+@import "../node_modules/bootstrap/scss/buttons";
+@import "../node_modules/bootstrap/scss/containers";
+@import "../node_modules/bootstrap/scss/nav";
+@import "../node_modules/bootstrap/scss/navbar";
+@import "../node_modules/bootstrap/scss/transitions";
+@import "../node_modules/bootstrap/scss/images";
+
+@import "../node_modules/bootstrap/scss/helpers";
+@import "../node_modules/bootstrap/scss/utilities";
+@import "../node_modules/bootstrap/scss/utilities/api";
+
+// 8. Add additional custom code here
+
+// --------------------------------------------------
+
+// Custom Styling
+
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+// Colors
+$bg-dark: #171531;
+$bg-light: #f3f5f9;
+$main: #5468ff;
+$secondary: rgba(84, 104, 255, 0.2);
+$text-main: #111827;
+
+// Switch dark Mode
+body {
+  background-color: $bg-dark;
+  color: white;
+  font-family: "Inter", sans-serif !important;
+  .navbar {
+    a {
+      color: white;
+    }
+  }
+  .btn-mode {
+    color: white;
+  }
+}
+
+// Switch Light Mode
+#lightmode {
+  background-color: $bg-light;
+  h1 {
+    color: #181a26;
+  }
+  .navbar {
+    a {
+      color: #181a26;
+    }
+  }
+  .btn-mode {
+    color: #181a26;
+  }
+}
+
+// Responsive
+@include media-breakpoint-down(lg) {
+}
+@include media-breakpoint-up(lg) {
+}
+@include media-breakpoint-up(xl) {
+}

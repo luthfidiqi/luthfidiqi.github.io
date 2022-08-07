@@ -1,6 +1,6 @@
 <div style="display:flex; align-items: center;">
 <img style=" margin-right: 20px;"src="./src/images/logo-luthfiqi.svg" width="100" height="100"/>
-<h1 >Luthfiqi - Personal Website</h1>
+<h1 >Luthfiqi - Portfolio Website</h1>
 </div>
 
 <h4 >Hi, I'm Luthfi, an Frontend Web Developer, I believe in crafting engaging and intuitive website. I have an interest in programming and design. I mastered using figma and several other design applications, then I learning web development with HTML, CSS, Javascript, and Bootstrap.</h4>
@@ -27,7 +27,7 @@
 
 - Node.js
 - Vite Bootstrap
-- HTML, CCS, JS
+- HTML, CSS, JS
 
 <br>
 

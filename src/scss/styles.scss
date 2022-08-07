@@ -117,6 +117,9 @@ body {
       a {
         font-size: 14px;
         font-weight: 600;
+        &:hover {
+          color: $main-purple;
+        }
       }
     }
   }
@@ -147,6 +150,12 @@ body {
         font-weight: 600;
         margin: 0;
         margin-left: 5px;
+      }
+      .dark-display {
+        display: flex;
+      }
+      .light-display {
+        display: none;
       }
     }
     .btn-mode-light {
@@ -226,6 +235,12 @@ body {
           font-size: 16px;
           font-weight: 600;
           color: white;
+        }
+        .dark-display {
+          display: flex;
+        }
+        .light-display {
+          display: none;
         }
       }
     }
@@ -434,16 +449,104 @@ body {
 // Switch Light Mode
 #lightmode {
   background-color: map-get($light, "background");
-  h1 {
+  h1,
+  h3,
+  h4 {
     color: #181a26;
   }
-  .navbar {
-    a {
+  header {
+    .btn-mode {
       color: #181a26;
     }
+    .navbar {
+      a {
+        color: #181a26;
+        color: #181a26;
+        &:hover {
+          color: $main-purple;
+        }
+      }
+      background-color: map-get($light, "background");
+      .switch-mode {
+        background-color: map-get($light, "secondary");
+        .btn-mode-dark {
+          background-color: rgba(255, 255, 255, 0);
+          color: $main-purple;
+          img {
+            color: $main-purple;
+          }
+          .dark-display {
+            display: none;
+          }
+          .light-display {
+            display: flex;
+          }
+        }
+      }
+      .btn-mode-light {
+        background-color: $main-purple;
+      }
+    }
+    .hero {
+      .left {
+        p {
+          color: map-get($light, "text");
+        }
+        .hero-cta {
+          .btn-cv {
+            a {
+              color: $main-purple;
+            }
+            .dark-display {
+              display: none;
+            }
+            .light-display {
+              display: flex;
+            }
+          }
+        }
+      }
+    }
   }
-  .btn-mode {
-    color: #181a26;
+  main {
+    .about {
+      p {
+        color: #181a26;
+      }
+    }
+    .skills {
+      .logo-skills {
+        background-color: map-get($light, "secondary");
+      }
+    }
+    .projects {
+      .projects-cont {
+        .projects-card {
+          background-color: map-get($light, "secondary");
+          p {
+            color: #181a26;
+          }
+        }
+      }
+    }
+    .contact {
+      .logo {
+        a {
+          color: map-get($light, "text");
+        }
+      }
+      background-color: map-get($light, "secondary");
+    }
+  }
+
+  footer {
+    background-color: map-get($light, "secondary");
+    .footer-line {
+      background-color: $main-purple;
+    }
+    p {
+      color: map-get($light, "text");
+    }
   }
 }
 

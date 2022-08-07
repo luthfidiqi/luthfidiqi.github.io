@@ -575,6 +575,9 @@ body {
     }
   }
   main {
+    .about {
+      margin-top: 50px;
+    }
     .projects {
       .projects-cont {
         display: flex;
@@ -587,6 +590,9 @@ body {
           align-items: center;
           text-align: center;
           margin: 10px !important;
+        }
+        .btn-purple {
+          width: 100%;
         }
       }
     }

@@ -598,5 +598,26 @@ body {
     }
   }
 }
-@include media-breakpoint-up(xl) {
+@include media-breakpoint-down(xxl) {
+  body {
+    .navbar {
+      padding: 30px 12px;
+    }
+    .hero {
+      height: 100vh;
+      .left {
+        h2 {
+          font-size: 32px;
+        }
+        h1 {
+          font-size: 50px;
+        }
+      }
+      .right {
+        img {
+          width: 400px;
+        }
+      }
+    }
+  }
 }

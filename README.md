@@ -1,4 +1,8 @@
+<div style="display:flex; align-items: center;">
+<img style=" margin-right: 20px;"src="./src/images/logo-luthfiqi.svg" width="100" height="100"/>
 <h1 >Luthfiqi - Personal Website</h1>
+</div>
+
 <h4 >Hi, I'm Luthfi, an Frontend Web Developer, I believe in crafting engaging and intuitive website. I have an interest in programming and design. I mastered using figma and several other design applications, then I learning web development with HTML, CSS, Javascript, and Bootstrap.</h4>
 
 ### Link Preview Website : [https://luthfidiqi.github.io]
@@ -63,6 +67,7 @@ npm start
 <hr>
 
 <div display="flex">
+
 <div>
 
 ### Dark Mode
@@ -77,6 +82,8 @@ npm start
 
 <img src="./src/images/light-mode.png"/>
 <br>
+</div>
+
 </div>
 
 <hr>

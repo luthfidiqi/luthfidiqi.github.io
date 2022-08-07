@@ -601,16 +601,19 @@ body {
 @include media-breakpoint-down(xxl) {
   body {
     .navbar {
-      padding: 30px 12px;
+      padding: 15px 12px;
     }
     .hero {
       height: 100vh;
+      padding-top: 200px;
+      margin-bottom: 100px;
       .left {
         h2 {
-          font-size: 32px;
+          font-size: 30px;
         }
         h1 {
-          font-size: 50px;
+          font-size: 45px;
+          margin-bottom: 20px;
         }
       }
       .right {

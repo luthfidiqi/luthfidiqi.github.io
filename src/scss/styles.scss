@@ -875,6 +875,13 @@ body {
       }
     }
   }
+  #lightmode {
+    .navbar {
+      .navbar-collapse {
+        border-top: 2px solid map-get($light, "secondary");
+      }
+    }
+  }
 }
 
 @include media-breakpoint-down(lg) {

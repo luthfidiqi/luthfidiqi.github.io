@@ -26,7 +26,6 @@
 ## **Requirement**
 
 - Node.js
-- node_modules : npm install or yarn install
 - Vite Bootstrap
 - HTML, CCS, JS
 

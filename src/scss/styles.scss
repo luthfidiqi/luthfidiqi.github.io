@@ -44,6 +44,119 @@ $light: (
 
 $main-purple: #5468ff;
 
+// Animation
+@keyframes rotate_animation {
+  0% {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(15deg);
+    -webkit-transform: rotate(15deg);
+    -moz-transform: rotate(15deg);
+    -ms-transform: rotate(15deg);
+    -o-transform: rotate(15deg);
+  }
+  50% {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(-15deg);
+    -webkit-transform: rotate(-15deg);
+    -moz-transform: rotate(-15deg);
+    -ms-transform: rotate(-15deg);
+    -o-transform: rotate(-15deg);
+  }
+  100% {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+  }
+}
+
+@keyframes zoom_animation {
+  0% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+  }
+  25% {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+  }
+  50% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+  }
+  75% {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+  }
+}
+
+@keyframes opacity_animation {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes letterSpacing_animation {
+  0% {
+    letter-spacing: 0px;
+  }
+  25% {
+    letter-spacing: 1px;
+  }
+  50% {
+    letter-spacing: 0px;
+  }
+  75% {
+    letter-spacing: 1px;
+  }
+  100% {
+    letter-spacing: 0px;
+  }
+}
+
 // Switch dark Mode
 html {
   scroll-behavior: smooth;
@@ -77,6 +190,9 @@ body {
         font-size: 20px;
         font-weight: 800;
         margin-right: 0;
+        &:hover {
+          color: $main-purple;
+        }
       }
     }
     button.navbar-toggler {
@@ -135,6 +251,7 @@ body {
     -ms-border-radius: 999px;
     -o-border-radius: 999px;
     .btn-mode-dark {
+      cursor: pointer;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -157,8 +274,17 @@ body {
       .light-display {
         display: none;
       }
+      &:hover {
+        opacity: 0.6;
+        transition: 0.5s;
+        -webkit-transition: 0.5s;
+        -moz-transition: 0.5s;
+        -ms-transition: 0.5s;
+        -o-transition: 0.5s;
+      }
     }
     .btn-mode-light {
+      cursor: pointer;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -175,6 +301,14 @@ body {
         font-weight: 600;
         margin: 0;
         margin-left: 5px;
+      }
+      &:hover {
+        opacity: 0.6;
+        transition: 0.5s;
+        -webkit-transition: 0.5s;
+        -moz-transition: 0.5s;
+        -ms-transition: 0.5s;
+        -o-transition: 0.5s;
       }
     }
   }
@@ -193,12 +327,16 @@ body {
         margin-bottom: 20px;
         color: $main-purple;
         font-weight: 700;
+        animation: letterSpacing_animation 7s infinite;
+        -webkit-animation: letterSpacing_animation 7s infinite;
       }
       h1 {
         font-size: 60px;
         margin-bottom: 40px;
         color: white;
         font-weight: 700;
+        animation: opacity_animation 5s infinite;
+        -webkit-animation: opacity_animation 5s infinite;
       }
       p {
         margin-bottom: 40px;
@@ -225,6 +363,14 @@ body {
             font-weight: 600;
             color: white;
           }
+          &:hover {
+            opacity: 0.6;
+            transition: 0.5s;
+            -webkit-transition: 0.5s;
+            -moz-transition: 0.5s;
+            -ms-transition: 0.5s;
+            -o-transition: 0.5s;
+          }
         }
       }
       .btn-cv {
@@ -235,6 +381,14 @@ body {
           font-size: 16px;
           font-weight: 600;
           color: white;
+        }
+        &:hover {
+          opacity: 0.6;
+          transition: 0.5s;
+          -webkit-transition: 0.5s;
+          -moz-transition: 0.5s;
+          -ms-transition: 0.5s;
+          -o-transition: 0.5s;
         }
         .dark-display {
           display: flex;
@@ -250,6 +404,22 @@ body {
       display: flex;
       align-items: center;
       justify-content: center;
+      img {
+        animation: rotate_animation 2s infinite;
+        -webkit-animation: rotate_animation 2s infinite;
+        &:hover {
+          transform: scale(1.1);
+          transition: 0.5s;
+          -webkit-transition: 0.5s;
+          -moz-transition: 0.5s;
+          -ms-transition: 0.5s;
+          -o-transition: 0.5s;
+          -webkit-transform: scale(1.1);
+          -moz-transform: scale(1.1);
+          -ms-transform: scale(1.1);
+          -o-transform: scale(1.1);
+        }
+      }
     }
   }
 
@@ -262,6 +432,8 @@ body {
         text-align: center;
         font-weight: 700;
         margin-bottom: 50px;
+        animation: letterSpacing_animation 5s infinite;
+        -webkit-animation: letterSpacing_animation 5s infinite;
       }
       .about-cont {
         display: flex;
@@ -278,6 +450,8 @@ body {
         img {
           width: 55%;
           margin-bottom: 30px;
+          animation: zoom_animation 2s infinite;
+          -webkit-animation: zoom_animation 2s infinite;
         }
         h4 {
           font-size: 22px;
@@ -288,6 +462,18 @@ body {
           font-size: 15px;
           line-height: 200%;
           opacity: 0.8;
+        }
+        &:hover {
+          transform: scale(1.1);
+          transition: 0.5s;
+          -webkit-transition: 0.5s;
+          -moz-transition: 0.5s;
+          -ms-transition: 0.5s;
+          -o-transition: 0.5s;
+          -webkit-transform: scale(1.1);
+          -moz-transform: scale(1.1);
+          -ms-transform: scale(1.1);
+          -o-transform: scale(1.1);
         }
       }
     }
@@ -300,6 +486,8 @@ body {
         text-align: center;
         font-weight: 700;
         margin-bottom: 50px;
+        animation: letterSpacing_animation 5s infinite;
+        -webkit-animation: letterSpacing_animation 5s infinite;
       }
       .logo-skills {
         display: flex;
@@ -321,6 +509,8 @@ body {
         text-align: center;
         font-weight: 700;
         margin-bottom: 50px;
+        animation: letterSpacing_animation 5s infinite;
+        -webkit-animation: letterSpacing_animation 5s infinite;
       }
       .projects-cont {
         display: flex;
@@ -366,11 +556,29 @@ body {
             -moz-border-radius: 14px;
             -ms-border-radius: 14px;
             -o-border-radius: 14px;
-            a {
-              font-size: 16px;
-              font-weight: 600;
-              color: white;
+            font-size: 16px;
+            font-weight: 600;
+            color: white;
+            &:hover {
+              opacity: 0.6;
+              transition: 0.5s;
+              -webkit-transition: 0.5s;
+              -moz-transition: 0.5s;
+              -ms-transition: 0.5s;
+              -o-transition: 0.5s;
             }
+          }
+          &:hover {
+            transform: scale(1.1);
+            transition: 0.5s;
+            -webkit-transition: 0.5s;
+            -moz-transition: 0.5s;
+            -ms-transition: 0.5s;
+            -o-transition: 0.5s;
+            -webkit-transform: scale(1.1);
+            -moz-transform: scale(1.1);
+            -ms-transform: scale(1.1);
+            -o-transform: scale(1.1);
           }
         }
       }
@@ -396,6 +604,8 @@ body {
         font-size: 40px;
         font-weight: 700;
         margin-bottom: 30px;
+        animation: opacity_animation 5s infinite;
+        -webkit-animation: opacity_animation 5s infinite;
       }
       .btn-purple {
         width: 150px;
@@ -414,13 +624,33 @@ body {
           font-weight: 600;
           color: white;
         }
+        &:hover {
+          opacity: 0.6;
+          transition: 0.5s;
+          -webkit-transition: 0.5s;
+          -moz-transition: 0.5s;
+          -ms-transition: 0.5s;
+          -o-transition: 0.5s;
+        }
       }
       .contact-icon {
         display: flex;
-        img {
-          width: 40px;
-          margin: 0 14px;
-          margin-top: 40px;
+        a {
+          img {
+            width: 40px;
+            margin: 0 14px;
+            margin-top: 40px;
+            animation: rotate_animation 4s infinite;
+            -webkit-animation: rotate_animation 4s infinite;
+          }
+          &:hover {
+            opacity: 0.6;
+            transition: 0.5s;
+            -webkit-transition: 0.5s;
+            -moz-transition: 0.5s;
+            -ms-transition: 0.5s;
+            -o-transition: 0.5s;
+          }
         }
       }
     }

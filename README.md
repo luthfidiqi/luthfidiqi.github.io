@@ -71,7 +71,7 @@ npm start
 
 ### Dark Mode
 
-<img src="./src/images/dark-mode.png"/>
+<img src="./src/images/dark-mode-new.png"/>
 <br>
 </div>
 
@@ -79,7 +79,7 @@ npm start
 
 ### Light Mode
 
-<img src="./src/images/light-mode.png"/>
+<img src="./src/images/light-mode-new.png"/>
 <br>
 </div>
 
